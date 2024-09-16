@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        .product, .cart-item {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 300px; /* Adjust width as needed */
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .remove-btn {
+            background-color: #dc3545;
+        }
+        .remove-btn:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Shopping Cart Example</h1>
+
+    <div>
+        <h2>Products</h2>
+        <div id="product-list"></div> <!-- Products will be displayed here -->
+    </div>
+
+    <div>
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div> <!-- Cart items will be displayed here -->
+        <h3>Total: <span id="cart-total">$0</span></h3> <!-- Cart total -->
+    </div>
+
+    <!-- JavaScript code -->
+    <script src="app.js"></script>
+</body>
+</html>
+
